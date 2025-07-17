@@ -5,21 +5,21 @@
 class K8x < Formula
   desc "Agentic kubectl - AI-powered Kubernetes operations"
   homepage "https://github.com/shankarg87/k8x"
-  version "0.0.99"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.0.99/k8x_Darwin_x86_64.tar.gz"
-      sha256 "4e0da070b5850c75214909fbd68d10f800ff97ac4d47ce988fa4d29dd3d561be"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Darwin_x86_64.tar.gz"
+      sha256 "5fb0c5626efd314296c838bf98f274f54fb682229da14727debc1bc1e787b919"
 
       def install
         bin.install "k8x"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.0.99/k8x_Darwin_arm64.tar.gz"
-      sha256 "0ecf728138b3d9b97b0c81280cd765bcca9663aa51ca0951ed22d0790be0e07c"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Darwin_arm64.tar.gz"
+      sha256 "5d1c80ef439194ae24cf7a9db51a400672157501cee57894d05cda06d8f23738"
 
       def install
         bin.install "k8x"
@@ -29,15 +29,15 @@ class K8x < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.0.99/k8x_Linux_x86_64.tar.gz"
-      sha256 "c08fd820d1d228311c3528f1bba4ac75358e056c411e2479cf2fc0f653223124"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Linux_x86_64.tar.gz"
+      sha256 "e5be4d94ddc3196944993205eb520e3941e2a45bfc4537834c852c84f2100b55"
       def install
         bin.install "k8x"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.0.99/k8x_Linux_arm64.tar.gz"
-      sha256 "daa748bceea17a3ffd2ed9d7aecb72287dde466273c7fa623704cdc6d7d20056"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Linux_arm64.tar.gz"
+      sha256 "2d8e4bd6d8dec172377d868ccab3491b76f3b9dabe1a4f07f26487ed6787eaf7"
       def install
         bin.install "k8x"
       end

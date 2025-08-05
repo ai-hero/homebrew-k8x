@@ -5,21 +5,21 @@
 class K8x < Formula
   desc "Agentic kubectl - AI-powered Kubernetes operations"
   homepage "https://github.com/shankarg87/k8x"
-  version "0.1.1"
-  license "MIT"
+  version "0.2.0"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Darwin_x86_64.tar.gz"
-      sha256 "5fb0c5626efd314296c838bf98f274f54fb682229da14727debc1bc1e787b919"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.2.0/k8x_Darwin_x86_64.tar.gz"
+      sha256 "4408c9959bdd9c82b38aea2feee19caee25cb47ce3320911e527637de28587e5"
 
       def install
         bin.install "k8x"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Darwin_arm64.tar.gz"
-      sha256 "5d1c80ef439194ae24cf7a9db51a400672157501cee57894d05cda06d8f23738"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.2.0/k8x_Darwin_arm64.tar.gz"
+      sha256 "59039d50a329b6417605ccd8678ff80537b124855b534b393669ed1616a25fe7"
 
       def install
         bin.install "k8x"
@@ -29,15 +29,15 @@ class K8x < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Linux_x86_64.tar.gz"
-      sha256 "e5be4d94ddc3196944993205eb520e3941e2a45bfc4537834c852c84f2100b55"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.2.0/k8x_Linux_x86_64.tar.gz"
+      sha256 "db45ac2918789ff9adee15270f7052db4e3e516332e7600ef854e252e784a1a6"
       def install
         bin.install "k8x"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shankarg87/k8x/releases/download/v0.1.1/k8x_Linux_arm64.tar.gz"
-      sha256 "2d8e4bd6d8dec172377d868ccab3491b76f3b9dabe1a4f07f26487ed6787eaf7"
+      url "https://github.com/shankarg87/k8x/releases/download/v0.2.0/k8x_Linux_arm64.tar.gz"
+      sha256 "2793431286ec9a34559efca4bdb459664521680ff048b58c2d2ea263280a912f"
       def install
         bin.install "k8x"
       end
